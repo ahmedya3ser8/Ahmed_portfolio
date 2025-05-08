@@ -1,9 +1,9 @@
 import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap } from "react-icons/fa";
 import { SiJavascript, SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si"; 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { Element } from "react-scroll";
 
-const iconVariants = (duration: unknown) => ({
+const iconVariants = (duration: number): Variants => ({
   initial: { y: -20 },
   animate: {
     y: [20, -20],
